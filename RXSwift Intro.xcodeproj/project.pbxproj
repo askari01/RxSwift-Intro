@@ -12,6 +12,7 @@
 		36D664511F66A458003B2FE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36D6644F1F66A458003B2FE5 /* Main.storyboard */; };
 		36D664531F66A458003B2FE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36D664521F66A458003B2FE5 /* Assets.xcassets */; };
 		36D664561F66A458003B2FE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36D664541F66A458003B2FE5 /* LaunchScreen.storyboard */; };
+		86F51B6E8DCA08E41B21AD96 /* Pods_RXSwift_Intro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 580937B8E6B6E709C4CF6A25 /* Pods_RXSwift_Intro.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		36D664521F66A458003B2FE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36D664551F66A458003B2FE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36D664571F66A458003B2FE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		580937B8E6B6E709C4CF6A25 /* Pods_RXSwift_Intro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RXSwift_Intro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C331ABB9DB8B9C06EE6DD471 /* Pods-RXSwift Intro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXSwift Intro.release.xcconfig"; path = "Pods/Target Support Files/Pods-RXSwift Intro/Pods-RXSwift Intro.release.xcconfig"; sourceTree = "<group>"; };
+		D3FAF394FDD268EF7E5F0BEA /* Pods-RXSwift Intro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXSwift Intro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RXSwift Intro/Pods-RXSwift Intro.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86F51B6E8DCA08E41B21AD96 /* Pods_RXSwift_Intro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		106FA840CB1BB22478B1AE45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3FAF394FDD268EF7E5F0BEA /* Pods-RXSwift Intro.debug.xcconfig */,
+				C331ABB9DB8B9C06EE6DD471 /* Pods-RXSwift Intro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		36D6643F1F66A458003B2FE5 = {
 			isa = PBXGroup;
 			children = (
 				36D6644A1F66A458003B2FE5 /* RXSwift Intro */,
 				36D664491F66A458003B2FE5 /* Products */,
+				106FA840CB1BB22478B1AE45 /* Pods */,
+				F340149D21374DA2908943C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = "RXSwift Intro";
 			sourceTree = "<group>";
 		};
+		F340149D21374DA2908943C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				580937B8E6B6E709C4CF6A25 /* Pods_RXSwift_Intro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36D6645A1F66A458003B2FE5 /* Build configuration list for PBXNativeTarget "RXSwift Intro" */;
 			buildPhases = (
+				B7D36CA4B75E79C31927E886 /* [CP] Check Pods Manifest.lock */,
 				36D664441F66A458003B2FE5 /* Sources */,
 				36D664451F66A458003B2FE5 /* Frameworks */,
 				36D664461F66A458003B2FE5 /* Resources */,
+				452C41F281F1E49A4B5FB99F /* [CP] Embed Pods Frameworks */,
+				110EEE9681ED7B634DBA0E4C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		110EEE9681ED7B634DBA0E4C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RXSwift Intro/Pods-RXSwift Intro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		452C41F281F1E49A4B5FB99F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RXSwift Intro/Pods-RXSwift Intro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7D36CA4B75E79C31927E886 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		36D664441F66A458003B2FE5 /* Sources */ = {
@@ -211,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -262,7 +337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -272,30 +347,34 @@
 		};
 		36D6645B1F66A458003B2FE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3FAF394FDD268EF7E5F0BEA /* Pods-RXSwift Intro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 824M9D9K7F;
 				INFOPLIST_FILE = "RXSwift Intro/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.askari.RXSwift-Intro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		36D6645C1F66A458003B2FE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C331ABB9DB8B9C06EE6DD471 /* Pods-RXSwift Intro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 824M9D9K7F;
 				INFOPLIST_FILE = "RXSwift Intro/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.askari.RXSwift-Intro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

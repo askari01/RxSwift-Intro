@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,13 +14,93 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RXSwift_Intro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Dz-Hx-lq5">
+                                <rect key="frame" x="139" y="208" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fLE-xM-PYV">
+                                <rect key="frame" x="139" y="246" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lno-nB-CnI">
+                                <rect key="frame" x="139" y="284" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="sEL-fz-Q3c">
+                                <rect key="frame" x="112" y="332" width="150" height="2"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </progressView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UnV-Pc-Q9O">
+                                <rect key="frame" x="139" y="342" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7P1-WJ-10H">
+                                <rect key="frame" x="80" y="270" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEO-2a-Fz2">
+                                <rect key="frame" x="80" y="230" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxg-AG-4lC">
+                                <rect key="frame" x="80" y="347" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pEO-2a-Fz2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="210" id="6l7-Ib-KvK"/>
+                            <constraint firstItem="sEL-fz-Q3c" firstAttribute="centerX" secondItem="UnV-Pc-Q9O" secondAttribute="centerX" id="7qh-Xp-IRs"/>
+                            <constraint firstItem="lno-nB-CnI" firstAttribute="leading" secondItem="UnV-Pc-Q9O" secondAttribute="leading" id="Bjo-zI-QFX"/>
+                            <constraint firstItem="lno-nB-CnI" firstAttribute="top" secondItem="fLE-xM-PYV" secondAttribute="bottom" constant="8" symbolic="YES" id="ECT-yn-7li"/>
+                            <constraint firstItem="5Dz-Hx-lq5" firstAttribute="leading" secondItem="fLE-xM-PYV" secondAttribute="leading" id="I7i-3z-Qf6"/>
+                            <constraint firstItem="sEL-fz-Q3c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Obc-pg-V1d"/>
+                            <constraint firstItem="pEO-2a-Fz2" firstAttribute="leading" secondItem="7P1-WJ-10H" secondAttribute="leading" id="PhV-3s-BwZ"/>
+                            <constraint firstItem="fLE-xM-PYV" firstAttribute="trailing" secondItem="lno-nB-CnI" secondAttribute="trailing" id="UCS-pT-yQ7"/>
+                            <constraint firstItem="fLE-xM-PYV" firstAttribute="leading" secondItem="lno-nB-CnI" secondAttribute="leading" id="Wd0-F3-Kdh"/>
+                            <constraint firstItem="7P1-WJ-10H" firstAttribute="leading" secondItem="Zxg-AG-4lC" secondAttribute="leading" id="ZPs-d4-ByB"/>
+                            <constraint firstItem="lno-nB-CnI" firstAttribute="trailing" secondItem="UnV-Pc-Q9O" secondAttribute="trailing" id="Zk2-Aw-MWg"/>
+                            <constraint firstItem="Zxg-AG-4lC" firstAttribute="centerY" secondItem="UnV-Pc-Q9O" secondAttribute="centerY" id="bDK-XS-ypQ"/>
+                            <constraint firstItem="5Dz-Hx-lq5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="188" id="cm7-zj-v6N"/>
+                            <constraint firstItem="5Dz-Hx-lq5" firstAttribute="trailing" secondItem="fLE-xM-PYV" secondAttribute="trailing" id="f4v-03-g4e"/>
+                            <constraint firstItem="pEO-2a-Fz2" firstAttribute="trailing" secondItem="7P1-WJ-10H" secondAttribute="trailing" id="iUa-sq-lnX"/>
+                            <constraint firstItem="fLE-xM-PYV" firstAttribute="top" secondItem="5Dz-Hx-lq5" secondAttribute="bottom" constant="8" symbolic="YES" id="iXE-kD-AiJ"/>
+                            <constraint firstItem="sEL-fz-Q3c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="96" id="oKp-As-veg"/>
+                            <constraint firstItem="sEL-fz-Q3c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qEw-hC-iuT"/>
+                            <constraint firstItem="5Dz-Hx-lq5" firstAttribute="leading" secondItem="pEO-2a-Fz2" secondAttribute="trailing" constant="17" id="rR0-iL-qvy"/>
+                            <constraint firstItem="pEO-2a-Fz2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="uG0-vv-v9O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Dz-Hx-lq5" secondAttribute="trailing" constant="139" id="uco-vJ-UHp"/>
+                            <constraint firstItem="UnV-Pc-Q9O" firstAttribute="top" secondItem="sEL-fz-Q3c" secondAttribute="bottom" constant="8" symbolic="YES" id="vKc-ia-KY5"/>
+                            <constraint firstItem="7P1-WJ-10H" firstAttribute="top" secondItem="pEO-2a-Fz2" secondAttribute="bottom" constant="19" id="vr6-Ia-tbO"/>
+                            <constraint firstItem="7P1-WJ-10H" firstAttribute="trailing" secondItem="Zxg-AG-4lC" secondAttribute="trailing" id="xaj-ty-mZb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="firstTF" destination="5Dz-Hx-lq5" id="UtG-ie-XZH"/>
+                        <outlet property="resultTF" destination="UnV-Pc-Q9O" id="nN7-oX-gsD"/>
+                        <outlet property="secondTF" destination="fLE-xM-PYV" id="Y2v-k4-jeH"/>
+                        <outlet property="thirdTF" destination="lno-nB-CnI" id="jSq-92-M3M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
